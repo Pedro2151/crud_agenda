@@ -1,0 +1,39 @@
+.card.report-card{
+    background-image: linear-gradient(to right, #80e5fc , #305595);
+}
+.card.report-card:hover{
+    background-image: linear-gradient(to right, #80e5fc , #305595);
+    box-shadow: 9px 7px 31px #00000078;
+    border: #0000;
+}
+.secund-text-color{
+    color: #fff;
+}
+.icon-dashbord{
+    color: #0033ef !important;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #303e67;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: .8125rem;
+    line-height: 1.8;
+    border-radius: .25rem;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    background-color: #e6e6e6;
+}
+.btn.icon-social{
+    color: #303e67 !important;
+    border-color: #303e67 !important;
+}
+.btn.icon-social:hover{
+    color: #303e67 !important;
+    box-shadow: 9px 7px 31px #00000078;
+    border-color: #303e67 !important;
+}

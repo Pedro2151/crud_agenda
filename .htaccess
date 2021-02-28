@@ -1,0 +1,23 @@
+AddDefaultCharset UTF-8
+
+#Mode Rewrite
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+# Contato Index
+RewriteRule  ^(contatos)\/?$ index.php?pageid=$1 [L]
+
+# Contato Cadastrar
+RewriteRule  ^(contatos/cadastrar)\/?$ index.php?pageid=$1 [L]
+RewriteRule  ^action/(contatos/cadastrar)\/?$ index.php?pageid=$1&action=sim [L]
+
+# Contato Editar
+RewriteRule  ^(contatos/editar)/([0-9]+)\/?$ index.php?pageid=$1&id=$2 [L]
+RewriteRule  ^action/(contatos/editar)/([0-9]+)\/?$ index.php?pageid=$1&id=$2&action=sim [L]
+
+# Contato Delete
+RewriteRule  ^action/(contatos/deletar)/([0-9]+)\/?$ index.php?pageid=$1&id=$2&action=sim [L]
+
+# Dashboard
+RewriteRule ^\/?$ index.php?pageid=dashboard [L]
